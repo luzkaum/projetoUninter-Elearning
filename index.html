@@ -149,15 +149,15 @@
         </div>
     </section>
 
-    <!-- Footer -->
+
     <footer id="contato" class="bg-gray-800 dark:bg-gray-900 text-white py-8 transition-colors duration-300">
         <div class="container mx-auto px-4 text-center">
-            <p>© 2023 ZULKA TECH. Todos os direitos reservados.</p>
+            <p>© 2025 ZULKA TECH. Todos os direitos reservados.</p>
             <p class="mt-2">Entre em contato: luzkaum@gmail.com</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    
     <script>
         function scrollToVideos() {
             document.getElementById('videos').scrollIntoView({ behavior: 'smooth' });
@@ -172,7 +172,7 @@
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
         }
 
-        // Aplicar tema salvo
+
         const savedTheme = localStorage.getItem('theme') || 'light';
         if (savedTheme === 'dark') {
             document.documentElement.classList.add('dark');
@@ -181,12 +181,11 @@
             document.getElementById('theme-icon').textContent = '🌙';
         }
 
-        // Função para filtrar vídeos por tema (simulando pastas)
         function filterVideos(theme) {
             const cards = document.querySelectorAll('.video-card');
             const buttons = document.querySelectorAll('.filter-btn');
 
-            // Atualizar botões ativos
+       
             buttons.forEach(btn => btn.classList.remove('active'));
             document.querySelector(`[data-theme="${theme}"]`)?.classList.add('active');
 
@@ -201,7 +200,6 @@
             });
         }
 
-        // Aplicar filtro inicial
         filterVideos('all');
     </script>
 </body>
